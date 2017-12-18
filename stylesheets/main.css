@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Thanks, Eric! */
+
+
+/* Colours 
+2017 - rgba(213,111,62,1);
+2016 - rgba(254,215,102,1);
+2015 - rgba(0,159,183,1);
+2014 - rgba(214,40,40,1);
+2013 - rgba(160,108,213,1);
+2012 - rgba(162,215,41,1);
+2011 - rgba(60,145,230,1);
+*/
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	color: rgba(46,56,56,1);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+header {
+	position: fixed;
+	padding: 2vh 2vw;
+	width: 100%;
+	border-bottom: 1px solid rgba(0,159,183,0.2);
+	background-color: white;
+}
+
+header a {
+	text-decoration: none;
+	color: rgba(0,159,183,1);
+	font-weight: 700;
+}
+
+article {
+	padding-top: 8vh;
+	width: 96vw;
+	margin: 0 2vw 5vh 2vw;
+}
+
+.home article,
+.albumList {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.year {
+	width: 20%;
+	text-align: center;
+	height: 5em;
+	line-height: 5em;
+	font-size: 1.8em;
+	font-family: 'Oswald', sans-serif;
+}
+
+.year a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.year a:hover {
+	box-shadow: 0 0 1px rgba(0,159,183,1);
+}
+
+.yearPage h2 {
+	font-size: 2em;
+	margin-bottom: 1em;
+	font-weight: 700;
+	color: rgba(0,159,183,1);
+}
+
+.album {
+	width: 22%;
+	padding: 1em 1.5% 0.5em 1.5%;
+}
+
+@media all and (max-width: 1200px) {
+	.album {
+		width: 48%;
+		padding: 1%;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.album {
+		width: 100%;
+	}
+}
+
+.albumHeader {
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.position {
+	font-size: 2em;
+	color: rgba(46,56,56,1);
+	border-radius: 50%;
+	border: 5px solid rgba(0,159,183,1);
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	margin: auto;
+	font-family: 'Oswald', sans-serif;
+}
+
+.albumTitle {
+	font-style: italic;
+	margin-top: 0.5em;
+	font-size: 1.2em;
+	color: rgba(0,159,183,1);
+	white-space: nowrap;
+}
+
+.artist {
+	font-weight: 700;
+	font-size: 1.2em;
+	white-space: nowrap;
+}
+
+.albumTitle,
+.artist {
+	margin-bottom: 0.5em;
+}
+
+.albumCover img {
+	width: 100%;
+}
+
+iframe {
+	margin-top: 0.5em;
+}
+
+b {
+	font-weight: 700;
+}
