@@ -155,12 +155,13 @@ body {
 	padding: 0;
 	color: rgba(46,56,56,1);
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
+	border-spacing: border-box;
 }
 
 header {
 	position: fixed;
-	padding: 2vh 2vw;
+	padding: 2vh 7vw;
 	width: 100%;
 	border-bottom: 1px solid rgba(0,159,183,0.2);
 	background-color: white;
@@ -174,8 +175,8 @@ header a {
 
 article {
 	padding-top: 8vh;
-	width: 96vw;
-	margin: 0 2vw 5vh 2vw;
+	width: 86vw;
+	margin: 0 7vw 5vh 7vw;
 }
 
 .home article,
@@ -204,75 +205,73 @@ article {
 }
 
 .yearPage h2 {
-	font-size: 2em;
-	margin-bottom: 1em;
-	font-weight: 700;
-	color: rgba(0,159,183,1);
+	font-size: 3em;
+	margin: 1em 0;
+	font-family: "Special Elite", cursive;
 }
 
-.album {
-	width: 22%;
-	padding: 1em 1.5% 0.5em 1.5%;
-}
-
-@media all and (max-width: 1200px) {
-	.album {
-		width: 48%;
-		padding: 1%;
-	}
-}
-
-@media all and (max-width: 800px) {
-	.album {
-		width: 100%;
-	}
-}
-
-.albumHeader {
-	margin-bottom: 1em;
-	text-align: center;
+.yearPage section {
+	margin-bottom: 5vh;
 }
 
 .position {
-	font-size: 2em;
-	color: rgba(46,56,56,1);
-	border-radius: 50%;
-	border: 5px solid rgba(0,159,183,1);
-	width: 2em;
-	height: 2em;
-	line-height: 2em;
-	text-align: center;
-	margin: auto;
-	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
 }
 
-.albumTitle {
-	font-style: italic;
-	margin-top: 0.5em;
-	font-size: 1.2em;
-	color: rgba(0,159,183,1);
-	white-space: nowrap;
+.albumBlurb {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.artist {
-	font-weight: 700;
-	font-size: 1.2em;
-	white-space: nowrap;
+.albumSection {
+	width: 35vw;
 }
 
-.albumTitle,
-.artist {
-	margin-bottom: 0.5em;
+.albumSection:first-child {
+	margin-right: 10vw;
 }
 
 .albumCover img {
 	width: 100%;
 }
 
-iframe {
-	margin-top: 0.5em;
+.albumSubSection  {
+	margin-bottom: 1.5em;
 }
 
-b {
+.metaSection {
+	/*border-top: 1px solid rgba(150,150,150,0.2);
+	border-bottom: 1px solid rgba(150,150,150,0.2);*/
+	text-align: right;
+	margin-bottom: 1em;
+}
+
+.metaBlurb p {
+	margin-bottom: 1.5em;
+}
+
+svg,
+.flag {
+	height: 2em;
+	width: auto;
+	box-shadow: 1px 1px 2px rgba(150,150,150,1);
+}
+
+.yearPage h3 {
+	font-size: 1em;
+	margin-bottom: 0.5em;
 	font-weight: 700;
+}
+
+.yearPage p {
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+
+.year2017 .position {
+	color: rgba(213,111,62,1);
+}
+
+.mediaSection {
+	margin-bottom: 1.5em;
 }
