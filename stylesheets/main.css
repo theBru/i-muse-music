@@ -194,6 +194,12 @@ article {
 	font-family: 'Oswald', sans-serif;
 }
 
+@media screen and (max-width: 600px) {
+	.year {
+		width: 100%;
+	}
+}
+
 .year a {
 	display: block;
 	text-decoration: none;
@@ -208,6 +214,12 @@ article {
 	font-size: 3em;
 	margin: 1em 0;
 	font-family: "Special Elite", cursive;
+}
+
+@media screen and (max-width: 600px) {
+	.yearPage h2 {
+		font-size: 2em;
+	}
 }
 
 .yearPage section {
@@ -227,6 +239,12 @@ article {
 	width: 35vw;
 }
 
+@media screen and (max-width: 960px) {
+	.albumSection {
+		width: 100%;
+	}
+}
+
 .albumSection:first-child {
 	margin-right: 10vw;
 }
@@ -244,6 +262,13 @@ article {
 	border-bottom: 1px solid rgba(150,150,150,0.2);*/
 	text-align: right;
 	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 960px) {
+	.metaSection {
+		text-align: left;
+		margin-top: 1em;
+	}
 }
 
 .metaBlurb p {
